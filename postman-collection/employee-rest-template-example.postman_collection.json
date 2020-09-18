@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "75485901-3aa3-4143-b460-8507523d4d2d",
+		"name": "employee-rest-template-example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-all-employees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "f04e7b3e-ad12-4c05-b44e-432e10c94d74",
+						"username": "user"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"Mukesh\",\r\n        \"lastName\": \"Kumar\",\r\n        \"emailId\": \"m@gmail.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/v1/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-employee",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "f04e7b3e-ad12-4c05-b44e-432e10c94d74",
+						"username": "user"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"Mukesh\",\r\n        \"lastName\": \"Kumar\",\r\n        \"emailId\": \"m@gmail.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/v1/employee/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create-employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\": \"Mukesh\",\r\n    \"age\" : 30,\r\n    \"address\": \"ABCFDD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/save"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-employee",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "f04e7b3e-ad12-4c05-b44e-432e10c94d74",
+						"username": "user"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"Mukesh\",\r\n        \"lastName\": \"Kumar\",\r\n        \"emailId\": \"m@gmail.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/v1/employee/2"
+			},
+			"response": []
+		},
+		{
+			"name": "get-employee-by-id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "f04e7b3e-ad12-4c05-b44e-432e10c94d74",
+						"username": "user"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"Mukesh\",\r\n        \"lastName\": \"Kumar\",\r\n        \"emailId\": \"m@gmail.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/v1/employee/2"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
